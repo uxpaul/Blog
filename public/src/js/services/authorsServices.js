@@ -1,9 +1,9 @@
 ((app) => {
     'use strict'
 
-    app.service('authorsService', function($http) {
+    app.service('authorsService', ['$http',function($http) {
         return {
-
+          
             get() {
                 return $http.get('/api/authors')
             },
@@ -20,6 +20,6 @@
                 return $http.delete('/api/authors/' + authors._id)
             }
         }
-    })
+    }])
 
 })(angular.module('app.services'))

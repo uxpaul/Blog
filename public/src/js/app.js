@@ -7,5 +7,6 @@
     'app.article',
     'app.articles',
     'app.newarticle',
-    'app.authors'
+    'app.authors',
+    'app.login'
 ]))
